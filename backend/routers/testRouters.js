@@ -3,11 +3,19 @@ const testRouters = require('express').Router()
 
 
 testRouters.get("/", (req, res) => {
+
+    console.log("+++++++++++++++++++++++++++++=")
+    console.log(req.body)
+    console.log("+++++++++++++++++++++++++++++=")
+
     res.status(200)
         .send("hello from backend part.")
 })
 
 testRouters.get("/google", async (req, res) => {
+
+    console.log(req.params)
+    console.log(".......params........")
 
     const data = await fetch('https://google.com')
         // .then(res => res.text())

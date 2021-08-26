@@ -1,12 +1,13 @@
 const http = require('http')
+const app = require('./app')
+const PORT = require('./secrets/config').PORT
 
-const app =  require('./app')
-const PORT = 3000
+// console.log(PORT)
 
 
 
 const server = http.createServer(app)
 
-server.listen(PORT , ()=>{
+server.listen(PORT, () => {
     console.log(`t14 app is listening on locahost:${PORT}.`)
 })
