@@ -12,10 +12,11 @@ testRouters.get("/", (req, res) => {
         .send("hello from backend part.")
 })
 
-testRouters.get("/google", async (req, res) => {
+testRouters.get("/:urls", async (req, res) => {
 
-    console.log(req.params)
+    console.log(req.params.url)
     console.log(".......params........")
+    res.status(400).send("coool")
 
     const data = await fetch('https://google.com')
         // .then(res => res.text())

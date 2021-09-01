@@ -1,0 +1,14 @@
+GEt http://localhost:4000/api/google.com 
+
+# {
+#     "url": "https://google.com",
+#     "url_details": [
+#         {
+#             "time_stamp": "thu aug 26 2021 12:49:00",
+#             "status_code": 200
+#         }
+#     ]
+# }
+
+
+// to save data in database.
